@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit';
 import infoSlice from "./slices/Test";
 import authSlice from "./slices/Auth";
 import CompanieSlice from './slices/CompanieSlice';

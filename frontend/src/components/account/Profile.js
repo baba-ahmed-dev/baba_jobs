@@ -111,7 +111,7 @@ const Profile = () => {
             </div>
             <div className='d-flex justify-content-between align-items-center prof-info'>
                 <div className=''>
-                   <img className='globalImg' src={data.img} />
+                   <img className='globalImg' src={data.img} alt="profile" />
                    <h3 className='username'>{data.user}</h3>
                    {data.category ? <h5 className='username'>Career <span>{data.category}</span> </h5> : ''}
                    {data.birthcountry ? <h5 className='username'>Place of birth <span>{data.birthcountry}</span></h5> : ''}
@@ -121,7 +121,7 @@ const Profile = () => {
                    {data.numbercontact ? <h5 className='username'>Number for contact <span>{data.numbercontact}</span> </h5> : ''}
                 </div>
                 
-                {((authprofileid && (authprofileid == profileID)) || isStaff) && links() }
+                {((authprofileid && (authprofileid === profileID)) || isStaff) && links() }
                 
 
             </div>
@@ -139,9 +139,9 @@ const Profile = () => {
                            <h4 className='col'>Some picture</h4>
                        </div>
                        <div className='row'>
-                           <div className='col degDiv'>{data.degone ? <img className='deg' src={data.degone} />  : ''}</div>
-                           <div className='col degDiv '>{data.degtwo ? <img className='deg' src={data.degtwo} /> : ''}</div>
-                           <div className='col degDiv'>{data.degthree ? <img className='deg' src={data.degthree} /> : ''}</div>
+                           <div className='col degDiv'>{data.degone ? <img className='deg' src={data.degone} alt="dego" />  : ''}</div>
+                           <div className='col degDiv '>{data.degtwo ? <img className='deg' src={data.degtwo} alt="degt" /> : ''}</div>
+                           <div className='col degDiv'>{data.degthree ? <img className='deg' src={data.degthree} alt="degth"/> : ''}</div>
                        </div>
                     </div>
                 </div> : ''}
