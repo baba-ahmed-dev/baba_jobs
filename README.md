@@ -16,7 +16,7 @@ Baba Jobs is a job board application built with [Django](https://www.djangoproje
 To use Baba Jobs, you will need to have [Python](https://www.python.org/) and [Django](https://www.djangoproject.com/) installed. You can install the necessary packages using pip:
 
 ```
-https://github.com/baba-ahmed-dev/baba_jobs.git
+git clone https://github.com/baba-ahmed-dev/baba_jobs.git
 pip install -r requirements.txt
 ```
 
